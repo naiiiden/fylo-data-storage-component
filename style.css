@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Raleway", sans-serif;
+    background-image: url("images/bg-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.iconbox {/*the three icons with darker background*/
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color:hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}/*the three icons with darker background*/
+
+.logo {/*fylo logo*/
+    width: 60%;
+}/*fylo logo*/
+
+.firstcontainer {/* first container with logo and 3 icons*/
+    border-radius: .5rem;
+    border-top-right-radius: 5rem;
+    padding: 2rem;
+    width: 75%;
+    background-color:hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}/* first container with logo and 3 icons*/
+
+.secondcontainer {
+    width: 75%;
+    height: 8rem;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.GBleft {/*white cointainer 185GB left*/
+    background-color: #fff;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.GBleft div {
+    color: hsl(229, 57%, 11%);
+    font-size: 30px;
+}
+
+.GBleft p {
+    color:hsl(229, 7%, 55%);
+    font-size: 12px;
+}/*white cointainer 185GB left*/
+
+.used {
+    color: #fff;
+    font-size: 14px;
+}
+
+.barGB {/*0GB to 1000GB below bar*/
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    gap: 9rem;
+}/*0GB to 1000GB below bar*/
+
+.bar {/*the progress bar's bar*/
+    border-radius: 15px;
+    width: 100%;
+    height: 1rem;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    align-items: center;
+}/*the progress bar's bar*/
+
+.gradientbar {/*the colorful progress bar*/
+    border-radius: 15px;
+    width: 80%;
+    height: inherit;
+    background: var(--gradient);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}/*the colorful progress bar*/
+
+.whitedot {/*the white dot inside the progress bar*/
+    background-color: #fff;
+    width: 10%;
+    height: inherit;
+    border-radius: 50%;
+}/*the white dot inside the progress bar*/
+
+.column {/*used bar, progress bar, 0 to 1000gb*/
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5%;
+}/*used bar, progress bar, 0 to 1000gb*/
+
+.bigcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle {
+    display: none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url("images/bg-desktop.png");
+        background-size: cover;
+        background-position: bottom;
+        background-color:hsl(229, 57%, 11%);
+        height: 90vh;
+    }
+
+    .bigcontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .firstcontainer {
+        width: 20%;
+    }
+    
+    .secondcontainer {
+        width: 40%;
+    }
+
+    .whitedot {
+        width: 5%;
+    }
+
+    .cont {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 2rem;
+    }
+
+    .barGB {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .used {
+        align-self: flex-start;
+    }
+
+    .GBleft {
+        width: 25%;
+        position: relative;
+        left: 33%;
+        bottom: 120%;
+    }
+
+    .triangle {
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 2rem solid #fff;
+        border-left: 1.5rem solid transparent;
+        position: absolute;
+        top: 70%;
+        right: 0%;
+      }
+}
