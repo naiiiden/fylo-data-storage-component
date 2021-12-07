@@ -4,7 +4,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 # screenshots
 ### Desktop design
-![desktop](/design/desktop-design.jpg)
+![desktop](/design/desktop-design.png)
 
 ### Mobile design
 ![mobile](/design/mobile-design.jpg)
