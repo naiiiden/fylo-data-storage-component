@@ -10,5 +10,4 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 ![mobile](/design/mobile-design.jpg)
 
 ## Live preview
-The "185 GB LEFT" box has little vertical positioning issues while resizing the browser.
 https://naiiiden.github.io/fylo-data-storage-component/
